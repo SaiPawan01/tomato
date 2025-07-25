@@ -1,0 +1,126 @@
+.cart{
+    margin-top : 100px;
+}
+.cart-item-title{
+    display:grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    font-size: max(1vw,12px);
+    align-content: center;
+}
+    
+.cart-items-item{
+    margin:10px 0px;
+    color : black;
+}
+.cart-items-item p{
+    font-size: 16px;
+    font-weight :300;
+}
+.cross-icon button{
+    padding : 8px 12px;
+    background-color :red;
+    color: white;
+    cursor: pointer;
+}
+.cross-green button{
+    background-color: green;
+}
+.cart-items-item img{
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+}
+.cart hr{
+    height : 1px;
+    background-color: #e2e2e2;
+    border:none;
+}
+
+
+
+
+.cart-bottom{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    gap : max(12vw,20px);
+}
+.cart-total{
+    flex : 1;
+    display :flex;
+    flex-direction: column;
+    gap:20px;
+}
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color : #555;
+}
+.cart-total hr{
+    margin:10px 0px;
+}
+.cart-total button{
+    margin-top :10px;
+    color:white;
+    cursor : pointer;
+    width: max(15vw,200px)
+}
+.checkout-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cart-promocode{
+    flex : 1;
+
+}
+.cart-promocode p{
+    color: #555;
+}
+.cart-promocode-input{
+    margin-top : 10px;
+    display : flex;
+    justify-content: space-between;
+    align-items : center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+.cart-promocode-input input{
+    background-color: transparent;
+    border : none;
+    outline : none;
+    padding-left:10px;
+    
+}
+.cart-promocode-input button{
+    width : max(10vw,150px);
+    padding : 12px 5px;
+    background-color: black;
+    color : white;
+    border-radius : 4px;
+}
+
+@media (max-width : 750px){
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-items-item p{
+        font-size: 14px;
+        font-weight : 300;
+    }
+    .hide-media-query{
+        display: none;
+    }
+    .cart-item-title{
+        grid-template-columns: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+    .cross-icon button{
+        padding : 6px 10px;
+         
+    }
+}
+
+
